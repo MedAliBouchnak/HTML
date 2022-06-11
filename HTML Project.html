@@ -3,17 +3,18 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>HTML Project</title>
+        <title >HTML Project</title>
     </head>
     <body>
 <header>
+    <!-- Create "the navbar" with "local links" -->
     <nav>
         
         <a class="active" href="HTML Project.html">Home</a>
-        <a href="https://gomycode.com/TN-FR/about">About</a>
-        <a href="https://gomycode.com/TN-FR/product/developpement-front-end-avec-reactjs">Work</a>
-        <a href="https://gomycode.com/TN-FR/about">Resume</a>
-        <a href="https://gomycode.com/TN-FR/contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#resume">Resume</a>
+        <a href="#cont">Contact</a>
     </nav> <br>
     
         <form>
@@ -21,12 +22,12 @@
         </form>
     
 
-    <div class="body-text"><h1>This is a Home page</h1></div><hr><br>
+    <div class="body-text"><h1 id="top">This is a Home page</h1></div><hr><br>
 </header>
 <main>
-
+<!-- Create "about” section -->
     <section>
-        <h3>About</h3>
+        <h3 id="about">About</h3>
         <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer cursus hendrerit ligula, 
             eu pretium velit vestibulum non. Aenean feugiat magna facilisis nulla gravida, in faucibus risus volutpat. Vivamus tincidunt orci velit, 
             id dapibus leo rutrum ac. Curabitur nec diam posuere, rhoncus libero nec, facilisis nunc. 
@@ -35,13 +36,19 @@
             Morbi sit amet erat eget arcu gravida posuere sit amet id mauris. Sed nunc eros, condimentum vitae facilisis fringilla, ultrices at ante. 
             Mauris quis arcu venenatis, rutrum nunc non, interdum enim. Sed consectetur maximus bibendum.
         </i></p>
+            <!-- Addling a Youtube video -->
+
         <iframe width="560" height="315" src="https://www.youtube.com/embed/uWX3qqReDWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
-    
+    <!-- Create ”work” section -->
+
     <section>
-       <h3>Work</h3>
+       <h3 id="work">Work</h3>
         <p><b>Ut consectetur purus eget blandit imperdiet. Duis in turpis a nisi pharetra sagittis et vitae dolor. Integer a felis sit amet nulla ultricies tempor. Nulla facilisi. Vestibulum suscipit massa at risus iaculis vestibulum. Vivamus bibendum, urna accumsan faucibus ultricies, turpis purus tempus sem, et accumsan odio libero in lectus. Phasellus commodo massa ipsum, et maximus neque tincidunt sit amet. Suspendisse nec tristique elit, ac volutpat magna. Mauris tincidunt leo metus, eu porta libero tincidunt ac. Donec vel nisl sit amet elit pretium auctor. Praesent sit amet neque quam. Sed ultrices ultricies turpis vel elementum. Nulla et porta leo. Suspendisse potenti.
-       </b></p><table border="10" cellpadding="10" cellspacing="0">
+       </b></p>
+           <!-- Create a table -->
+
+       <table border="10" cellpadding="10" cellspacing="0">
            <tr>
                <th>Name</th>
                <th>lastName</th>
@@ -68,15 +75,17 @@
        </table> 
         
     </section>
-    
+    <!-- Create ”resume” section -->
     <section>
-        <h3>Resume</h3>
+        <h3 id="resume">Resume</h3>
         <div><img src="dog_cat_hero.JPG" alt="a cat"></div>
         <div><h4> Cat & Dog</h4>
-        <ol type="1">
+                        <!-- Create lists with hyperlinks -->
+
+        <ol type="1"><!-- Ordered List-->
             <li>Cats
-                <ul type="disc">
-                    <li><a href="https://en.wikipedia.org/wiki/Abyssinian_cat" target="_blank">Abyssinian</a></li>
+                <ul type="disc"><!-- Unordered List-->
+                    <li><a href="https://en.wikipedia.org/wiki/Abyssinian_cat" target="_blank">Abyssinian</a></li> <!-- Hyperlinks -->
                     <li><a href="https://en.wikipedia.org/wiki/Aegean_cat" target="_blank">Aegean</a></li>
                     <li><a href="https://en.wikipedia.org/wiki/American_Bobtail" target="_blank">American Bobtail</a></li>
                 </ul></li>
@@ -92,8 +101,11 @@
         </ol></div>
     </section>
     <hr>
+    <!-- Create ”contact” section -->
     <section>
-        <h3>Contact</h3>
+            <!-- Create HTML forms -->
+
+        <h3 id="cont">Contact</h3>
         <h4>Login</h4>
         <form>
             <label>First Name:</label>
@@ -102,7 +114,7 @@
             <label>Last Name:</label>
             <input type="text" name="Password" id="Password" />
             <br />
-            <!-- This button will submit the form, causing the page to redirect -->
+            
             <button type="submit">Connect</button>
           </form>
           <br>
@@ -139,6 +151,8 @@
 <aside>
      
 </aside>
+    <!-- Create the page footer -->
+    <br><br> <a href="#top">Go to top ^</a>
 <footer>
     <hr>
     <p>All rights reserved ;)</p>
